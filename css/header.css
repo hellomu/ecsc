@@ -1,0 +1,166 @@
+/*全局相同样式*/
+.header_main{
+	border-bottom:2px solid #E74085;
+}
+span.mark{/*i标记全部#FF6600*/
+	color:#FF6600;
+	}
+.width{/*主要内容区域宽度设置为1200px并居中,
+	弹性布局两端对齐,用于内布局*/
+	width:1200px;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+	}
+.icon {
+	width: 1em; height: 1em;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+}
+/*顶部功能板块*/
+.top{/*外布局*/
+	width:100%;
+	background-color:#F5F5F5;
+	border-bottom:1px solid #DDDDDD;
+	}
+.top img{
+	padding-bottom:3px;
+	}
+.top>.width>ul{
+	display:flex;
+	}
+.top>.width>.top_right>li{
+	margin-right:15px;
+	}
+.top>.width>.top_left>li{
+	margin-left:15px;
+	}
+.top>.width>ul>li{
+		font-size:12px;
+		line-height:28px;
+	}
+.top>.width>.top_left>li.quality>span{
+	display:inline-block;
+	vertical-align:middle;
+	width:13px;
+	height:18px;
+	background:url(../img/header_icon/bg.png);
+	background-position:-10px -432px;
+}
+/*中间功能板块*/
+.input{
+	width:402px;
+	height:30px;
+	border:2px solid #E74085;
+	display:flex;
+	justify-content:space-between;
+	margin:20px 0 10px;
+	}
+.input>a{
+	width:73px;
+	height:30px;
+	color:#fff;
+	font-size:14px;
+	line-height:28px;
+	text-align:center;
+	background-color:#E74085;
+	}
+.input>.txtSearch{
+	width:300px;
+	margin-left:15px;
+	border:none;
+	outline:none;
+	}
+.middle>.search>.hot_search{
+	color:#999999;
+	display:flex;
+	}
+.middle>.search>.hot_search>li{
+margin-right:5px;
+	cursor:pointer;
+}
+.middle>.service_call{
+	width:145px;
+	height:25px;
+	background:url(../img/header_icon/bg.png);
+	background-position:0px -520px;
+	margin-top:25px;
+}
+.middle>.shopCart{
+	width:130px;
+	height:39px;
+	font-size:14px;
+	line-height:40px;
+	margin-top:20px;
+	background:url(../img/header_icon/shopping-cart1.gif) no-repeat right;
+	}
+.middle .shopCart a{
+	margin-left:50px;
+	}
+/*底部分类搜索板块*/
+.bottom{
+	width:1200px;
+	margin:0 auto;
+	display:flex;
+	}
+.bottom>ul{
+	height:34px;
+	font-size:16px;
+	display:flex;
+	text-align:center;
+	}
+/*底部-家族*/
+.classification {
+	line-height: 32px;
+	margin-right:20px;
+	}
+.classification>li{
+	width:112px;
+	height:32px;
+	border:1px solid #E1E1E1;
+	cursor:pointer;
+	}
+.classification .downArrow{
+	display:inline-block;
+	width:10px;
+	height:10px;
+	margin-bottom:2px;
+	transform:rotate(45deg);
+	border:1px solid transparent;
+	border-right-color:#444;
+	border-bottom-color:#444;
+	}
+/*底部-分类商城*/
+.bottom>.classiMarket li:first-child~li{
+	margin-left:20px;
+	padding-top:7px;
+	}
+.bottom>.classiMarket li:first-child~li span{
+	display:inline-block;
+	vertical-align:middle;
+	width:12px;
+	height:19px;
+	background:url("../img/header_icon/bg2.png") -35px -1298px;
+	}
+.bottom>.classiMarket a:hover{
+	color:#E74085;
+	}
+.bottom>.classiMarket>li:first-child~li:hover>a>span{
+	transform:rotate(360deg);
+	transition:all 0.2s linear;
+}
+/*@keyframes fishBone{
+	100%{transform:rotate(270deg)}
+}
+.fishBone{ 鼠标悬停到分类商城时鱼骨头激活变化过渡
+	animation:fishBone .1s linear;
+	}*/
+/*做不到的功能，1.地区下拉列表 2.猫猫的双下尖括号 3.猫猫，商品分类的下拉列表
+4.文字悬停时鱼骨头开始动画
+经验：由于CSS的层叠（cascading），a元素继承自li的样式被浏览器的a元素的默认样
+式给覆盖了。可以让a的颜色默认继承父级，这样
+a {
+ color: inherit;
+}
+不过这种写法兼容性不太好，建议还是重写a的样式……

@@ -1,0 +1,77 @@
+.footer_main{
+	width:100%;
+	background-color:#F5F5F5;
+	}
+/*E宠特色*/
+.feature{
+	width:1200px;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+	}
+.feature>li{
+	font-size:18px;
+	font-weight:bold;
+	margin-top:30px;
+	width:200px;
+	height:60px;
+	text-align:center;
+	}
+/*分割线*/
+.cut-off{
+	width:100%;
+	height:1px;
+	background-color:#E5E5E5;
+	}
+/*功能大全*/
+.allFunction{
+	width:1200px;
+	margin:0 auto;
+	padding:30px 20px 10px;
+	border:1px solid transparent;
+	border-bottom-color:#E5E5E5;
+	}
+.allFunction>.phone{
+	margin:0px 20px;
+	}
+.allFunction>.phone p{
+	margin-bottom:25px;
+	}
+.allFunction>.phone span{
+	font-size:24px;
+	font-weight:bold;
+	}
+/*功能大全-列表*/
+.allFunction>ul{
+	margin:0 35px;
+	font-size:14px;
+	}
+.allFunction>ul>li{
+	margin-bottom:5px;
+	}
+.allFunction>ul>li:first-child{
+	margin-bottom:20px;
+	}
+/*二维码*/
+.allFunction>.code{
+	text-align:center;
+	margin:0 20px;
+	}
+.allFunction>.code>p{
+	margin-bottom:10px;
+	}
+/*外链*/
+.outsaid{
+	width:1200px;
+	margin:0 auto;
+	padding:20px 0;
+	}
+.outsaid ul{
+	display:flex;
+	justify-content:space-between;
+	margin:20px 30px;
+	}
+.outsaid p:last-child{
+	text-align:center;
+	}
+/*无法实现的功能，图片和文字一起动画

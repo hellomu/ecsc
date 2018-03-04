@@ -1,0 +1,85 @@
+.sidebar-main{
+  height:100%;
+  background-color:#444444;
+  padding:50px 5px;
+  position:fixed;
+  top:0;
+  right:0;
+}
+.sidebar-main>ul>li{
+  color:#fff;
+  text-align:center;
+  width:25px;
+  margin:25px auto;
+  opacity:0.5;
+}
+.sidebar-main>ul>li:hover{
+  color:#fff;
+  opacity:1;
+  cursor:pointer;
+}
+.sidebar-main>ul>li:nth-child(4)~li{
+  margin:25px auto;
+}
+.sidebar-main>ul>li>div{
+  margin-bottom:10px;
+  margin-left:2px;
+  background:url(../img/header_icon/bar_newhover.png) center;
+}
+.sidebar-main>ul>li>p{
+  width:14px;
+  margin-left:5px;
+}
+.sidebar-main>ul>li>.user{
+  width:25px;
+  height:25px;
+  background-position:-5px -210px;
+}
+.sidebar-main>ul>li>.cart{
+  width:25px;
+  height:20px;
+  background-position:-5px -277px;
+}
+.sidebar-main>ul>li>.count{
+  display:inline-block;
+  color:#000;
+  font-size:14px;
+  line-height:20px;
+  width:18px;
+  height:18px;
+  background-color:#fff;
+  border-radius:50%;
+}
+.sidebar-main>ul>li>.service{
+  width:25px;
+  height:25px;
+  background-position:-4px -620px;
+}
+.sidebar-main>ul>li>.indent{
+  width:25px;
+  height:25px;
+  background-position:-8px -312px;
+}
+.sidebar-main>ul>li>.star{
+  width:25px;
+  height:25px;
+  background-position:-8px -700px;
+}
+.sidebar-main>ul>li>.wechat{
+  width:25px;
+  height:25px;
+  background-position:-5.5px -730px;
+}
+.sidebar-main>ul>li>.facebook{
+  width:25px;
+  height:25px;
+  background-position:-6px -762px;
+}
+.sidebar-main>ul>li>.back-top{
+  display:inline-block;
+  width:10px;
+  height:10px;
+  border-top:2px solid #fff;
+  border-left:2px solid #fff;
+  transform:rotate(45deg);
+}
