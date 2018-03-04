@@ -549,7 +549,7 @@ color:#666;
   color: #FF6600;
   font-weight: bold;
 }
-/*商品介绍-右侧-详情*/
+/*商品介绍-右侧-标题*/
 .item-info>.right>ul>li{
   margin-right:3px;
   background-color:#F5F5F5;
@@ -557,7 +557,7 @@ color:#666;
   border:1px solid #ddd;
   float:left;
 }
-.item-info>.right>ul>li:nth-child(5)~li{
+.item-info>.right>ul>li.special{
   float:right;
   background-color:#fff;
   margin-right:0;
@@ -584,10 +584,12 @@ color:#666;
 .item-info>.right input:checked+div{
   display:block;
 }
+/*商品详情-商品详情页*/
 .item-info>.right>div>div.detail{
   background:url('../img/product/detail/goods_intro_bottom.jpg') no-repeat bottom;
-  padding-bottom:879px;
+  padding:20px 0 879px 0;
   box-sizing:border-box;
+  text-align:center;
 }
 /*商品详情-商品参数*/
 .right>div>div.container2{
